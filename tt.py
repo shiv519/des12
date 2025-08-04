@@ -172,7 +172,7 @@ with tabs[2]:
         g=st.selectbox("Grade",grades)
         sec=st.text_input("Section","A")
         if st.button("Generate Timetable"): 
-            if generate_timetable(g,sec): st.success("Generated"); st.experimental_rerun()
+            if generate_timetable(g,sec): st.success("Generated"); st.rerun()
         colors=get_colors()
         for d in WEEKDAYS:
             st.subheader(d)
